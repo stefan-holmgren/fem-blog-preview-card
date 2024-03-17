@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* #region Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: unset;
+}
+
+img,
+picture,
+svg,
+canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* #endregion */
+
+:root {
+  --color-primary: hsl(47, 88%, 63%);
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-500: hsl(0, 0%, 50%);
+  --color-neutral-900: hsl(0, 0%, 7%);
+  --fw-neutral: 500;
+  --fw-bold: 800;
+  --fs-small: 0.875rem;
+  --fs-medium: 1rem;
+  --fs-large: 1.5rem;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-neutral);
+  line-height: 1.5;
+  background-color: var(--color-primary);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.blog-card {
+  width: 24rem;
+  background-color: var(--color-neutral-100);
+  border-radius: 1.25rem;
+  border: 1px solid var(--color-neutral-900);
+  box-shadow: var(--color-neutral-900) 0.5rem 0.5rem;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.blog-card section {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.blog-image {
+  border-radius: 0.625rem;
+  width: 100%;
+}
+
+.blog-card .tag {
+  font-size: var(--fs-small);
+  background-color: var(--color-primary);
+  color: var(--color-neutral-900);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--fw-bold);
+}
+
+.blog-card .publish-date {
+  font-size: var(--fs-small);
+}
+
+.blog-card .title {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+}
+
+.description {
+  color: var(--color-neutral-500);
+}
+
+.author {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  height: 2rem;
+}
+
+.author img {
+  height: 100%;
+}
+
+.author .name {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+}
