@@ -51,3 +51,5 @@ Trying to learn more about CSS Grid and Flexbox, and how to use them together.
 ## Author
 
 - Frontend Mentor - [@stefan-holmgren](https://www.frontendmentor.io/profile/stefan-holmgren)
+
+> Note: small README edit made as a branch test.
